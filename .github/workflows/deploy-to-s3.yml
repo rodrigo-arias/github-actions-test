@@ -1,5 +1,9 @@
 name: Github Action S3 Deploy
 
+permissions:
+  id-token: write
+  contents: read
+
 on:
   workflow_call:
     inputs:
