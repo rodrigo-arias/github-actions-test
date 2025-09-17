@@ -17,7 +17,7 @@ jobs:
   build-dev:
     uses: rodrigo-arias/github-actions-test/.github/workflows/deploy-to-s3.yml@main
     with:
-      CI_ENV: production
+      CI_ENV: prod
     secrets:
       AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
       AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
